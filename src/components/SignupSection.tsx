@@ -64,9 +64,9 @@ export const SignupSection = () => {
           <div className="mb-8">
             <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
             <h2 className="text-4xl font-bold text-foreground mb-4">You're In!</h2>
-            <p className="text-xl text-muted-foreground mb-8">
-              Welcome to the future of European car parts trading, <strong>{formData.name}</strong>!
-            </p>
+              <p className="text-xl text-muted-foreground mb-8">
+                Welcome to the future of European Citroën BX parts trading, <strong>{formData.name}</strong>!
+              </p>
           </div>
 
           <Card className="bg-gradient-subtle border-0 shadow-premium">
@@ -109,8 +109,8 @@ export const SignupSection = () => {
             Be Among the <span className="bg-gradient-accent bg-clip-text text-transparent">First</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Join the waitlist and get exclusive early access to Europe's most comprehensive 
-            car parts community platform.
+            Join the waitlist and get exclusive early access to Europe's dedicated 
+            Citroën BX community platform.
           </p>
         </div>
 
@@ -161,13 +161,13 @@ export const SignupSection = () => {
                 <div className="space-y-2">
                   <Label htmlFor="carModel" className="text-sm font-medium flex items-center gap-2">
                     <Car className="w-4 h-4" />
-                    Primary Car Model
+                    Your BX Model
                   </Label>
                   <Input
                     id="carModel"
                     name="carModel"
                     type="text"
-                    placeholder="e.g., BMW E46, Audi A4 B8, VW Golf Mk7"
+                    placeholder="e.g., BX 16 TRS, BX GTi, BX Break 19 TZD, BX 4TC"
                     value={formData.carModel}
                     onChange={handleInputChange}
                     className="h-12 transition-smooth focus:shadow-glow"
@@ -249,8 +249,8 @@ export const SignupSection = () => {
                 <h4 className="font-semibold">Limited Time Offer</h4>
               </div>
               <p className="text-white/90">
-                Early access is limited to the first 1,000 members. Join now to secure your spot 
-                in Europe's premier car parts community.
+                Early access is limited to the first 1,000 BX enthusiasts. Join now to secure your spot 
+                in Europe's premier Citroën BX community.
               </p>
             </div>
           </div>
