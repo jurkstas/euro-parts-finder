@@ -25,7 +25,7 @@ export const SignupSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Basic validation
     if (!formData.name || !formData.email || !formData.carModel) {
       toast({
@@ -65,7 +65,7 @@ export const SignupSection = () => {
             <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
             <h2 className="text-4xl font-bold text-foreground mb-4">You're In!</h2>
             <p className="text-xl text-muted-foreground mb-8">
-              Welcome to the future of European car parts trading, <strong>{formData.name}</strong>!
+              Thanks for joining, <strong>{formData.name}</strong>. We’ll keep you posted with clear, occasional updates.
             </p>
           </div>
 
@@ -75,21 +75,24 @@ export const SignupSection = () => {
               <div className="space-y-4 text-left">
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span>You'll receive launch updates via email</span>
+                  <span>Launch updates by email (unsubscribe anytime)</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span>Early access invitation before public launch</span>
+                  <span>Early invitation before wider access</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span>Special founder member benefits</span>
+                  <span>Option to try new features early and give feedback</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span>Connect with {formData.carModel} enthusiasts across Europe</span>
+                  <span>Connect with {formData.carModel} owners across Europe</span>
                 </div>
               </div>
+              <p className="mt-6 text-sm text-muted-foreground">
+                We follow an EU-first privacy approach (GDPR-aligned). No selling of personal data.
+              </p>
             </CardContent>
           </Card>
         </div>
@@ -102,15 +105,14 @@ export const SignupSection = () => {
       <div className="max-w-4xl mx-auto px-6">
         <div className="text-center mb-16">
           <Badge variant="outline" className="mb-4 px-4 py-2 text-sm font-semibold">
-            Early Access • Limited Spots
+            Early Access • Limited Rollout
           </Badge>
-          
+
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Be Among the <span className="bg-gradient-accent bg-clip-text text-transparent">First</span>
+            Be Among the <span className="bg-gradient-accent bg-clip-text">First</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Join the waitlist and get exclusive early access to Europe's most comprehensive 
-            car parts community platform.
+            Join the waitlist for a dedicated, Europe-wide Citroën BX space focused on structure, search, and classifieds.
           </p>
         </div>
 
@@ -175,9 +177,9 @@ export const SignupSection = () => {
                   />
                 </div>
 
-                <Button 
-                  type="submit" 
-                  variant="electric" 
+                <Button
+                  type="submit"
+                  variant="electric"
                   size="lg"
                   className="w-full h-12 text-lg font-semibold"
                 >
@@ -185,8 +187,7 @@ export const SignupSection = () => {
                 </Button>
 
                 <p className="text-xs text-muted-foreground text-center">
-                  By signing up, you agree to receive updates about our platform launch. 
-                  Unsubscribe anytime.
+                  We’ll use your details only for launch updates and early access. Unsubscribe anytime.
                 </p>
               </form>
             </CardContent>
@@ -204,38 +205,38 @@ export const SignupSection = () => {
                     <CheckCircle className="w-4 h-4 text-white" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground">Founder Member Status</h4>
-                    <p className="text-muted-foreground">Special badge and privileges in the community</p>
+                    <h4 className="font-semibold text-foreground">Founder Member Badge</h4>
+                    <p className="text-muted-foreground">Visible on your profile and listings</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start gap-4">
                   <div className="w-8 h-8 bg-gradient-hero rounded-full flex items-center justify-center flex-shrink-0">
                     <CheckCircle className="w-4 h-4 text-white" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground">Free Premium Features</h4>
-                    <p className="text-muted-foreground">3 months of advanced search and alerts</p>
+                    <h4 className="font-semibold text-foreground">Early Feature Trials</h4>
+                    <p className="text-muted-foreground">Try new listing and search improvements when available</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start gap-4">
                   <div className="w-8 h-8 bg-gradient-hero rounded-full flex items-center justify-center flex-shrink-0">
                     <CheckCircle className="w-4 h-4 text-white" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground">Shape the Platform</h4>
-                    <p className="text-muted-foreground">Direct input on features and community guidelines</p>
+                    <h4 className="font-semibold text-foreground">Have a Say</h4>
+                    <p className="text-muted-foreground">Help shape features and community guidelines</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start gap-4">
                   <div className="w-8 h-8 bg-gradient-hero rounded-full flex items-center justify-center flex-shrink-0">
                     <CheckCircle className="w-4 h-4 text-white" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground">Launch Day Priority</h4>
-                    <p className="text-muted-foreground">First to access all features when we go live</p>
+                    <h4 className="font-semibold text-foreground">Priority Access</h4>
+                    <p className="text-muted-foreground">Get invited before wider rollout</p>
                   </div>
                 </div>
               </div>
@@ -246,11 +247,10 @@ export const SignupSection = () => {
                 <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
                   <span className="text-sm font-bold">!</span>
                 </div>
-                <h4 className="font-semibold">Limited Time Offer</h4>
+                <h4 className="font-semibold">Respecting Your Privacy</h4>
               </div>
               <p className="text-white/90">
-                Early access is limited to the first 1,000 members. Join now to secure your spot 
-                in Europe's premier car parts community.
+                EU-first, GDPR-aligned. We don’t sell personal data. You control what’s visible on your profile and listings.
               </p>
             </div>
           </div>
