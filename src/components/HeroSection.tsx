@@ -38,10 +38,10 @@ export const HeroSection = () => {
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
             A Dedicated <span className="bg-gradient-accent bg-clip-text">Citroën BX</span>
             <br />
-            Community for Europe
+            Community
           </h1>
           <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
-            A complementary space to Facebook groups — built for structure, search, and cross-border BX connections.
+            A space built for structure, search, and cross-border BX connections.
             Share hydropneumatic know-how, find rare parts, and keep knowledge organized for the long run.
           </p>
         </div>
@@ -75,7 +75,7 @@ export const HeroSection = () => {
             <div className="text-sm md:text-base">BXs Built</div>
           </div>
           <div className="text-center">
-            <div className="text-2xl md:text-3xl font-bold text-white">~40+</div>
+            <div className="text-2xl md:text-3xl font-bold text-white">40+</div>
             <div className="text-sm md:text-base">Countries Reached</div>
           </div>
           <div className="text-center">
