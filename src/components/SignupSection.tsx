@@ -175,6 +175,7 @@ export const SignupSection = () => {
                     className="h-12 transition-smooth focus:shadow-glow"
                     required
                   />
+
                 </div>
 
                 <Button
