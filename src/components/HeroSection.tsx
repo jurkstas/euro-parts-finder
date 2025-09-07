@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/citroen-bx-hero.jpg";
+import heroImage from "@/assets/hero-europe-connectivity.jpg";
 
 export const HeroSection = () => {
   const scrollToSignup = () => {
@@ -27,12 +27,12 @@ export const HeroSection = () => {
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         <div className="mb-8 animate-float">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-            The European <span className="bg-gradient-accent bg-clip-text text-transparent">Citroën BX</span><br />
-            Parts Community
+            Connect <span className="bg-gradient-accent bg-clip-text text-transparent">Europe's</span><br />
+            Car Parts Community
           </h1>
           <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
-            From hydropneumatic struts to angular body panels, from BX 11 to GTi 16v. 
-            Connect with BX enthusiasts across Europe and find those impossible-to-locate parts for your beloved wedge.
+            Break free from Facebook groups. Join the first dedicated European platform where enthusiasts 
+            find rare parts, connect across borders, and access local knowledge from every corner of Europe.
           </p>
         </div>
 
@@ -57,16 +57,16 @@ export const HeroSection = () => {
         {/* Stats */}
         <div className="flex justify-center space-x-8 md:space-x-16 text-white/80">
           <div className="text-center">
-            <div className="text-2xl md:text-3xl font-bold text-white">1982-1994</div>
-            <div className="text-sm md:text-base">Production Years</div>
-          </div>
-          <div className="text-center">
-            <div className="text-2xl md:text-3xl font-bold text-white">2.3M+</div>
-            <div className="text-sm md:text-base">BXs Produced</div>
-          </div>
-          <div className="text-center">
             <div className="text-2xl md:text-3xl font-bold text-white">27+</div>
             <div className="text-sm md:text-base">European Countries</div>
+          </div>
+          <div className="text-center">
+            <div className="text-2xl md:text-3xl font-bold text-white">∞</div>
+            <div className="text-sm md:text-base">Car Models Supported</div>
+          </div>
+          <div className="text-center">
+            <div className="text-2xl md:text-3xl font-bold text-white">24/7</div>
+            <div className="text-sm md:text-base">Community Access</div>
           </div>
         </div>
       </div>

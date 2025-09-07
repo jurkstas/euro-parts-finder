@@ -1,5 +1,5 @@
 import { CheckCircle, MapPin, Users, Zap, Globe, Shield } from "lucide-react";
-import partsImage from "@/assets/citroen-bx-parts.jpg";
+import carPartsImage from "@/assets/car-parts-floating.jpg";
 import { Button } from "@/components/ui/button";
 
 export const BenefitsSection = () => {
@@ -11,28 +11,28 @@ export const BenefitsSection = () => {
     },
     {
       icon: <MapPin className="w-8 h-8" />,
-      title: "Hydropneumatic Expertise",
-      description: "Connect with specialists who understand the unique BX suspension system and its maintenance needs."
+      title: "Local Knowledge",
+      description: "Connect with experts who know the best salvage yards, specialty shops, and hidden gems in each country."
     },
     {
       icon: <Users className="w-8 h-8" />,
-      title: "Model-Specific Community", 
-      description: "From BX 11 to GTi 16v, Break estates to 4TC rally cars. Every BX variant has its dedicated space."
+      title: "Dedicated Community",
+      description: "Purpose-built platform vs. Facebook's limitations. Better search, organization, and user experience."
     },
     {
       icon: <Zap className="w-8 h-8" />,
-      title: "Instant Part Matching",
-      description: "Search by BX model code (11, 14, 16, 19), year, and specific part numbers for precise results."
+      title: "Instant Matching",
+      description: "Smart algorithms connect your specific part requests with available inventory across Europe."
     },
     {
       icon: <Shield className="w-8 h-8" />,
-      title: "Gandini Heritage",
-      description: "Preserving Marcello Gandini's angular masterpiece with authentic parts and restoration knowledge."
+      title: "Verified Sellers",
+      description: "Rating system and verification process ensures quality transactions and trustworthy community members."
     },
     {
       icon: <CheckCircle className="w-8 h-8" />,
-      title: "Phase I & II Support",
-      description: "Whether you have a 1982 original or 1994 facelift, find parts for every BX production phase."
+      title: "Model-Specific Focus",
+      description: "Specialized categories and filters for your exact car model, year, and specifications."
     }
   ];
 
@@ -50,8 +50,8 @@ export const BenefitsSection = () => {
             Why Leave <span className="text-accent">Facebook Groups</span> Behind?
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Citroën BX owners deserve better than scattered Facebook groups. A dedicated platform 
-            for the European BX community with the tools and expertise your wedge deserves.
+            Facebook groups served us well, but it's time for something better. A platform designed 
+            specifically for automotive enthusiasts with European-wide reach.
           </p>
         </div>
 
@@ -59,27 +59,27 @@ export const BenefitsSection = () => {
         <div className="grid md:grid-cols-2 gap-8 mb-16">
           {/* Facebook Limitations */}
           <div className="bg-card rounded-2xl p-8 shadow-automotive border border-border">
-            <h3 className="text-2xl font-bold text-destructive mb-6">Facebook BX Groups Limitations</h3>
+            <h3 className="text-2xl font-bold text-destructive mb-6">Facebook Group Limitations</h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-destructive rounded-full mt-2 flex-shrink-0" />
-                <span className="text-muted-foreground">Scattered across multiple country groups</span>
+                <span className="text-muted-foreground">Limited to local/regional groups</span>
               </li>
               <li className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-destructive rounded-full mt-2 flex-shrink-0" />
-                <span className="text-muted-foreground">No BX model-specific categorization</span>
+                <span className="text-muted-foreground">Poor search functionality</span>
               </li>
               <li className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-destructive rounded-full mt-2 flex-shrink-0" />
-                <span className="text-muted-foreground">Hydropneumatic knowledge gets lost</span>
+                <span className="text-muted-foreground">No verification system</span>
               </li>
               <li className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-destructive rounded-full mt-2 flex-shrink-0" />
-                <span className="text-muted-foreground">Part numbers and compatibility unclear</span>
+                <span className="text-muted-foreground">Posts get buried quickly</span>
               </li>
               <li className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-destructive rounded-full mt-2 flex-shrink-0" />
-                <span className="text-muted-foreground">Rare BX variants overlooked</span>
+                <span className="text-muted-foreground">Language barriers</span>
               </li>
             </ul>
           </div>
@@ -87,7 +87,7 @@ export const BenefitsSection = () => {
           {/* Our Solution */}
           <div className="bg-gradient-hero rounded-2xl p-8 shadow-premium text-white relative overflow-hidden">
             <div className="absolute inset-0 opacity-10">
-              <img src={partsImage} alt="" className="w-full h-full object-cover" />
+              <img src={carPartsImage} alt="" className="w-full h-full object-cover" />
             </div>
             <div className="relative z-10">
               <h3 className="text-2xl font-bold mb-6">Our European Platform</h3>
