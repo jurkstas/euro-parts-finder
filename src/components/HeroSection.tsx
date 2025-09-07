@@ -67,8 +67,8 @@ export const HeroSection = () => {
         {/* Stats */}
         <div className="flex justify-center space-x-8 md:space-x-16 text-white/80">
           <div className="text-center">
-            <div className="text-2xl md:text-3xl font-bold text-white">1982-1994</div>
-            <div className="text-sm md:text-base">Production Years</div>
+            <div className="text-2xl md:text-3xl font-bold text-white">27+</div>
+            <div className="text-sm md:text-base">European Countries</div>
           </div>
           <div className="text-center">
             <div className="text-2xl md:text-3xl font-bold text-white">2.3M+</div>
