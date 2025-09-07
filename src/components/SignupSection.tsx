@@ -163,13 +163,13 @@ export const SignupSection = () => {
                 <div className="space-y-2">
                   <Label htmlFor="carModel" className="text-sm font-medium flex items-center gap-2">
                     <Car className="w-4 h-4" />
-                    Your BX Model
+                    Primary Car Model
                   </Label>
                   <Input
                     id="carModel"
                     name="carModel"
                     type="text"
-                    placeholder="e.g., BX 16 TRS, BX GTi, BX Break 19 TZD, BX 4TC"
+                    placeholder="e.g., BMW E46, Audi A4 B8, VW Golf Mk7"
                     value={formData.carModel}
                     onChange={handleInputChange}
                     className="h-12 transition-smooth focus:shadow-glow"

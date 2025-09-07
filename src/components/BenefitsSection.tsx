@@ -1,5 +1,5 @@
 import { CheckCircle, MapPin, Users, Zap, Globe, Shield } from "lucide-react";
-import partsImage from "@/assets/citroen-bx-parts.jpg";
+import carPartsImage from "@/assets/car-parts-floating.jpg";
 import { Button } from "@/components/ui/button";
 
 export const BenefitsSection = () => {
@@ -53,7 +53,6 @@ export const BenefitsSection = () => {
             Here you will find structure, search, and a long-term home for BX knowledge and classifieds.
           </p>
         </div>
-
         {/* Benefits Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {benefits.map((benefit, index) => (
