@@ -1,0 +1,48 @@
+# GitHub Actions workflow to lint, check unused files, build, and publish the React site on PRs to main
+name: PR Build & Publish
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+      - name: Run Lint
+        run: yarn lint
+
+  knip:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+      - name: Run Knip
+        run: yarn knip
+
+  build-and-publish:
+    runs-on: ubuntu-latest
+    needs: [lint, knip]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+      - name: Build
+        run: yarn build
+      # Add your publish step here, e.g., upload-artifact or deploy to hosting
+      # - name: Publish
+      #   run: echo "Add publish steps here"
