@@ -78,14 +78,6 @@ export const HeroSection = () => {
             <div className="text-2xl md:text-3xl font-bold text-white">40+</div>
             <div className="text-sm md:text-base">Countries Reached</div>
           </div>
-          <div className="text-center">
-            <div className="text-2xl md:text-3xl font-bold text-white">∞</div>
-            <div className="text-sm md:text-base">Car Models Supported</div>
-          </div>
-          <div className="text-center">
-            <div className="text-2xl md:text-3xl font-bold text-white">24/7</div>
-            <div className="text-sm md:text-base">Community Access</div>
-          </div>
         </div>
       </div>
     </section>
