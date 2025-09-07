@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { CitroenBXModel } from "@/components/CitroenBXModel";
 import heroImage from "@/assets/citroen-bx-hero.jpg";
 
 export const HeroSection = () => {
@@ -25,24 +24,16 @@ export const HeroSection = () => {
       <div className="absolute bottom-40 left-20 w-12 h-12 bg-primary/30 rounded-full animate-float" style={{ animationDelay: '4s' }} />
       
       {/* Content */}
-      <div className="relative z-10 text-center px-6 max-w-6xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-8 items-center">
-          {/* Left side - Text content */}
-          <div className="animate-float">
-            <h1 className="text-4xl md:text-6xl lg:text-5xl xl:text-6xl font-bold text-white mb-6 leading-tight text-left">
-              The European <span className="bg-gradient-accent bg-clip-text text-transparent">Citroën BX</span><br />
-              Parts Community
-            </h1>
-            <p className="text-lg md:text-xl text-white/90 mb-8 text-left leading-relaxed">
-              From hydropneumatic struts to angular body panels, from BX 11 to GTi 16v. 
-              Connect with BX enthusiasts across Europe and find those impossible-to-locate parts for your beloved wedge.
-            </p>
-          </div>
-          
-          {/* Right side - 3D Model */}
-          <div className="animate-float" style={{ animationDelay: '0.5s' }}>
-            <CitroenBXModel />
-          </div>
+      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
+        <div className="mb-8 animate-float">
+          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+            The European <span className="bg-gradient-accent bg-clip-text text-transparent">Citroën BX</span><br />
+            Parts Community
+          </h1>
+          <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
+            From hydropneumatic struts to angular body panels, from BX 11 to GTi 16v. 
+            Connect with BX enthusiasts across Europe and find those impossible-to-locate parts for your beloved wedge.
+          </p>
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
