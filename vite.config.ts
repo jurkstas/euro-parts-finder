@@ -9,6 +9,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
+  base: '/euro-parts-finder/',
   plugins: [
     react(),
     mode === 'development' &&
