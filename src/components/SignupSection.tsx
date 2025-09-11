@@ -23,39 +23,6 @@ export const SignupSection = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-
-    // Basic validation
-    if (!formData.name || !formData.email || !formData.carModel) {
-      toast({
-        title: "Please fill in all fields",
-        description: "We need your name, email, and car model to get started.",
-        variant: "destructive"
-      });
-      return;
-    }
-
-    // Email validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(formData.email)) {
-      toast({
-        title: "Invalid email address",
-        description: "Please enter a valid email address.",
-        variant: "destructive"
-      });
-      return;
-    }
-
-    // Simulate API call
-    setTimeout(() => {
-      setIsSubmitted(true);
-      toast({
-        title: "Welcome to the community!",
-        description: "You'll be among the first to know when we launch.",
-      });
-    }, 1000);
-  };
 
   if (isSubmitted) {
     return (
@@ -125,72 +92,24 @@ export const SignupSection = () => {
               </CardTitle>
             </CardHeader>
             <CardContent className="p-6">
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="space-y-2">
-                  <Label htmlFor="name" className="text-sm font-medium flex items-center gap-2">
-                    <User className="w-4 h-4" />
-                    Full Name
-                  </Label>
-                  <Input
-                    id="name"
-                    name="name"
-                    type="text"
-                    placeholder="Enter your full name"
-                    value={formData.name}
-                    onChange={handleInputChange}
-                    className="h-12 transition-smooth focus:shadow-glow"
-                    required
-                  />
+              <div className="space-y-6">
+
+
+                <div className="w-full flex justify-center">
+                  <iframe
+                    className="w-full aspect-[16/9] min-h-[400px] max-w-md mx-auto rounded-lg border"
+                    src="https://8d73fc69.sibforms.com/serve/MUIFAPD3Epnfl_Pl2zpJT6is0KkUGrp1cg3IOSJBFIJ5dL14AEotMSlL324_TCp3HOLAEHmw6Fz1Hfz00CYoPoZXuixN6BCQ12IsFE6z85lswN4mvIOPA4mp_6-ZBItOJrULgdLJPQ-Vod7Y--kwmzyhhjiHLhvb9QNZal3TiWQnXnlDuOsCS1PydbKMtYkL6NNGIbZHzpaTLDxA"
+                    allowFullScreen
+                    title="Signup Form"
+                  ></iframe>
                 </div>
 
-                <div className="space-y-2">
-                  <Label htmlFor="email" className="text-sm font-medium flex items-center gap-2">
-                    <Mail className="w-4 h-4" />
-                    Email Address
-                  </Label>
-                  <Input
-                    id="email"
-                    name="email"
-                    type="email"
-                    placeholder="your.email@example.com"
-                    value={formData.email}
-                    onChange={handleInputChange}
-                    className="h-12 transition-smooth focus:shadow-glow"
-                    required
-                  />
-                </div>
 
-                <div className="space-y-2">
-                  <Label htmlFor="carModel" className="text-sm font-medium flex items-center gap-2">
-                    <Car className="w-4 h-4" />
-                    Primary Car Model
-                  </Label>
-                  <Input
-                    id="carModel"
-                    name="carModel"
-                    type="text"
-                    placeholder="e.g., BMW E46, Audi A4 B8, VW Golf Mk7"
-                    value={formData.carModel}
-                    onChange={handleInputChange}
-                    className="h-12 transition-smooth focus:shadow-glow"
-                    required
-                  />
-
-                </div>
-
-                <Button
-                  type="submit"
-                  variant="electric"
-                  size="lg"
-                  className="w-full h-12 text-lg font-semibold"
-                >
-                  Get Early Access
-                </Button>
 
                 <p className="text-xs text-muted-foreground text-center">
                   We’ll use your details only for launch updates and early access. Unsubscribe anytime.
                 </p>
-              </form>
+              </div>
             </CardContent>
           </Card>
 
