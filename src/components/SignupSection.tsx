@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "./ui/Badge.1";
-import { CheckCircle, Mail, User, Car } from "lucide-react";
+import { CheckCircle, Mail, User, Car, CheckSquare, ChevronsUp, Heart } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 export const SignupSection = () => {
@@ -68,18 +68,14 @@ export const SignupSection = () => {
   }
 
   return (
-    <section id="signup-section" className="py-24 bg-background">
+    <section id="signup-section" className="py-24 bg-background min-h-screen">
       <div className="max-w-4xl mx-auto px-6">
         <div className="text-center mb-16">
-          <Badge variant="outline" className="mb-4 px-4 py-2 text-sm font-semibold">
-            Early Access • Limited Rollout
-          </Badge>
-
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Be Among the <span className="bg-gradient-accent bg-clip-text">First</span>
+            Early Access • Limited Rollout 
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Join the waitlist for a dedicated, Europe-wide Citroën BX space focused on structure, search, and classifieds.
+          <p className="text-xl max-w-2xl mx-auto mx-auto leading-relaxed">
+            Help shape the future of BX Central.
           </p>
         </div>
 
@@ -112,60 +108,61 @@ export const SignupSection = () => {
           <div className="space-y-8">
             <div>
               <h3 className="text-2xl font-bold text-foreground mb-6">
-                Early Access Benefits
+                Join the waitlist today
               </h3>
               <div className="space-y-4">
                 <div className="flex items-start gap-4">
                   <div className="w-8 h-8 bg-gradient-hero rounded-full flex items-center justify-center flex-shrink-0">
-                    <CheckCircle className="w-4 h-4 text-white" />
+                    <ChevronsUp className="w-4 h-4 text-white" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground">Founder Member Badge</h4>
-                    <p className="text-muted-foreground">Visible on your profile and listings</p>
+                    <h4 className="font-semibold text-foreground">Founder Badge</h4>
+                    <p className="text-muted-foreground">Display early status on your profile.</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4">
                   <div className="w-8 h-8 bg-gradient-hero rounded-full flex items-center justify-center flex-shrink-0">
-                    <CheckCircle className="w-4 h-4 text-white" />
+                    <ChevronsUp className="w-4 h-4 text-white" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground">Early Feature Trials</h4>
-                    <p className="text-muted-foreground">Try new listing and search improvements when available</p>
+                    <h4 className="font-semibold text-foreground">Feature Trials</h4>
+                    <p className="text-muted-foreground">Test new tools before launch.</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4">
                   <div className="w-8 h-8 bg-gradient-hero rounded-full flex items-center justify-center flex-shrink-0">
-                    <CheckCircle className="w-4 h-4 text-white" />
+                    <ChevronsUp className="w-4 h-4 text-white" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground">Have a Say</h4>
-                    <p className="text-muted-foreground">Help shape features and community guidelines</p>
+                    <h4 className="font-semibold text-foreground">Your Voice</h4>
+                    <p className="text-muted-foreground">Help shape rules and features.</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4">
                   <div className="w-8 h-8 bg-gradient-hero rounded-full flex items-center justify-center flex-shrink-0">
-                    <CheckCircle className="w-4 h-4 text-white" />
+                    <ChevronsUp className="w-4 h-4 text-white" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground">Priority Access</h4>
-                    <p className="text-muted-foreground">Get invited before wider rollout</p>
+                    <h4 className="font-semibold text-foreground">Priority Invitations</h4>
+                    <p className="text-muted-foreground">Join BX Central before others.</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="bg-gradient-accent rounded-xl p-6 text-white">
+            <div className="bg-gradient-hero rounded-xl p-6 text-white">
               <div className="flex items-center gap-3 mb-3">
                 <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
-                  <span className="text-sm font-bold">!</span>
+                  <Heart className="w-5 h-5 text-white" />
                 </div>
-                <h4 className="font-semibold">Respecting Your Privacy</h4>
+                <h4 className="font-semibold">Built by a BX Owner</h4>
               </div>
               <p className="text-white/90">
-                EU-first, GDPR-aligned. We don’t sell personal data. You control what’s visible on your profile and listings.
+                I’ve run BX groups online and watched good info get buried by noise and scams.
+BX Central is my attempt to fix that - a high-quality, structured community dedicated to the car we love.
               </p>
             </div>
           </div>

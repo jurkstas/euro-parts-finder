@@ -1,38 +1,38 @@
-import { CheckCircle, MapPin, Users, Zap, Globe, Shield } from "lucide-react";
+import { Carrot, MessageSquareWarning, ImageOff, Layers, Search, ArchiveX, Globe2, Wrench, Gem, ChevronsUp } from "lucide-react";
 import carPartsImage from "@/assets/car-parts-floating.jpg";
 import { Button } from "@/components/ui/button";
 
 export const BenefitsSection = () => {
   const benefits = [
     {
-      icon: <Globe className="w-8 h-8" />,
-      title: "Europe-Wide Community",
-      description: "Easier cross-border connections — UK to Poland, Germany to Italy — with threads and tags that surface nearby owners and enthusiasts."
+      icon: <MessageSquareWarning className="w-8 h-8" />,
+      title: "Social Media is messy",
+      description: "Scammers, lost posts, no search."
     },
     {
-      icon: <MapPin className="w-8 h-8" />,
-      title: "Hydropneumatic Know-How",
-      description: "Keep suspension tips and fixes findable over time, rather than lost in a fast-moving feed."
+      icon: <ImageOff className="w-8 h-8" />,
+      title: "Old forums are fading",
+      description: "Broken images, few new members."
     },
     {
-      icon: <Users className="w-8 h-8" />,
-      title: "Model-Specific Spaces", 
-      description: "From BX 11 to GTi 16v, Break estates to 4TC — categories and tags help each variant get attention."
+      icon: <ChevronsUp className="w-8 h-8" />,
+      title: "BX deserves better", 
+      description: "Structured, searchable, model-specific spaces."
     },
     {
-      icon: <Zap className="w-8 h-8" />,
-      title: "Practical Parts Search",
-      description: "Filter listings by type, condition, location, and seller. Search titles/tags; include part numbers when provided."
+      icon: <Search className="w-8 h-8" />,
+      title: "Practical parts search", 
+      description: "Filter by type, condition, location, and seller. Include part numbers when available."
     },
     {
-      icon: <Shield className="w-8 h-8" />,
-      title: "EU-First Privacy",
-      description: "GDPR-aligned approach, EU-friendly hosting options, no selling personal data. Verified badges without exposing sensitive info."
+      icon: <Globe2 className="w-8 h-8" />,
+      title: "Europe-wide Community", 
+      description: "Connect from UK to Ukraine, Norway to Italy — and beyond."
     },
     {
-      icon: <CheckCircle className="w-8 h-8" />,
-      title: "Phase I & II Coverage",
-      description: "From early cars to the facelift era — organize posts and listings by production phase when relevant."
+      icon: <Wrench className="w-8 h-8" />,
+      title: "Hydropneumatic Know-How", 
+      description: "Structured, searchable, model-specific spaces.."
     }
   ];
 
@@ -42,16 +42,13 @@ export const BenefitsSection = () => {
   };
 
   return (
-    <section className="py-24 bg-gradient-subtle">
+    <section id="benefits-section" className="py-24 bg-gradient-subtle min-h-screen">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Why Leave <span className="text-accent">Social Media</span> Behind?
+            Why <span className="text-primary">BX Central</span>?
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Here you will find structure, search, and a long-term home for BX knowledge and classifieds.
-          </p>
         </div>
         {/* Benefits Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
@@ -62,12 +59,12 @@ export const BenefitsSection = () => {
               <p className="text-muted-foreground">{benefit.description}</p>
             </div>
           ))}
-        </div>
 
+        </div>
         {/* CTA */}
         <div className="text-center">
           <Button 
-            variant="premium" 
+            variant="hero" 
             size="lg"
             onClick={scrollToSignup}
             className="text-lg px-8 py-4 h-auto"

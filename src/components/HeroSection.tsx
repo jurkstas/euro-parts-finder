@@ -6,6 +6,10 @@ export const HeroSection = () => {
     const signupElement = document.getElementById("signup-section");
     signupElement?.scrollIntoView({ behavior: "smooth" });
   };
+    const scrollToLearnMore = () => {
+    const BenefitsElement = document.getElementById("benefits-section");
+    BenefitsElement?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -36,13 +40,12 @@ export const HeroSection = () => {
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         <div className="mb-8 animate-float">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-            A Dedicated <span className="bg-gradient-accent bg-clip-text">Citroën BX</span>
+            A Dedicated <span className="bg-gradient-accent bg-clip-text text-zinc-800">Citroën BX</span>
             <br />
             Community
           </h1>
           <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
-            A space built for structure, search, and cross-border BX connections.
-            Share hydropneumatic know-how, find rare parts, and keep knowledge organized for the long run.
+            A long-term home for BX knowledge, parts, and connections across Europe. Built by enthusiasts, for enthusiasts.
           </p>
         </div>
 
@@ -53,32 +56,18 @@ export const HeroSection = () => {
             onClick={scrollToSignup}
             className="text-lg px-8 py-4 h-auto"
           >
-            Get Early Access
+            Subscribe for Early Access
           </Button>
           <Button
             variant="outline"
             size="lg"
+            onClick={scrollToLearnMore}
             className="text-lg px-8 py-4 h-auto bg-white/10 border-white/30 text-white hover:bg-white/20"
           >
             Learn More
           </Button>
         </div>
 
-        {/* Stats */}
-        <div className="flex justify-center space-x-8 md:space-x-16 text-white/80">
-          <div className="text-center">
-            <div className="text-2xl md:text-3xl font-bold text-white">27+</div>
-            <div className="text-sm md:text-base">European Countries</div>
-          </div>
-          <div className="text-center">
-            <div className="text-2xl md:text-3xl font-bold text-white">2.3M+</div>
-            <div className="text-sm md:text-base">BXs Built</div>
-          </div>
-          <div className="text-center">
-            <div className="text-2xl md:text-3xl font-bold text-white">40+</div>
-            <div className="text-sm md:text-base">Countries Reached</div>
-          </div>
-        </div>
       </div>
     </section>
   );
