@@ -86,18 +86,13 @@ export const SignupSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Form */}
           <Card className="shadow-premium border-0 bg-gradient-subtle">
-            <CardHeader>
-              <CardTitle className="text-2xl font-bold text-center">
-                Secure Your Spot
-              </CardTitle>
-            </CardHeader>
             <CardContent className="p-6">
               <div className="space-y-6">
 
 
                 <div className="w-full flex justify-center">
                   <iframe
-                    className="w-full aspect-[16/9] min-h-[400px] max-w-md mx-auto rounded-lg border"
+                    className="w-full aspect-[16/9] min-h-[420px] max-w-md mx-auto rounded-lg border"
                     src="https://8d73fc69.sibforms.com/serve/MUIFAPD3Epnfl_Pl2zpJT6is0KkUGrp1cg3IOSJBFIJ5dL14AEotMSlL324_TCp3HOLAEHmw6Fz1Hfz00CYoPoZXuixN6BCQ12IsFE6z85lswN4mvIOPA4mp_6-ZBItOJrULgdLJPQ-Vod7Y--kwmzyhhjiHLhvb9QNZal3TiWQnXnlDuOsCS1PydbKMtYkL6NNGIbZHzpaTLDxA"
                     allowFullScreen
                     title="Signup Form"
