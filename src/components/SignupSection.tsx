@@ -1,71 +1,9 @@
-import { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "./ui/Badge.1";
-import { CheckCircle, Mail, User, Car, CheckSquare, ChevronsUp, Heart } from "lucide-react";
-import { useToast } from "@/hooks/use-toast";
+import { ChevronsUp, Heart } from "lucide-react";
 
 export const SignupSection = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    carModel: ''
-  });
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  const { toast } = useToast();
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setFormData(prev => ({
-      ...prev,
-      [e.target.name]: e.target.value
-    }));
-  };
 
 
-  if (isSubmitted) {
-    return (
-      <section id="signup-section" className="py-24 bg-background">
-        <div className="max-w-2xl mx-auto px-6 text-center">
-          <div className="mb-8">
-            <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
-            <h2 className="text-4xl font-bold text-foreground mb-4">You're In!</h2>
-            <p className="text-xl text-muted-foreground mb-8">
-              Thanks for joining, <strong>{formData.name}</strong>. We’ll keep you posted with clear, occasional updates.
-            </p>
-          </div>
-
-          <Card className="bg-gradient-subtle border-0 shadow-premium">
-            <CardContent className="p-8">
-              <h3 className="text-2xl font-semibold mb-4">What happens next?</h3>
-              <div className="space-y-4 text-left">
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span>Launch updates by email (unsubscribe anytime)</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span>Early invitation before wider access</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span>Option to try new features early and give feedback</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span>Connect with {formData.carModel} owners across Europe</span>
-                </div>
-              </div>
-              <p className="mt-6 text-sm text-muted-foreground">
-                We follow an EU-first privacy approach (GDPR-aligned). No selling of personal data.
-              </p>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
-    );
-  }
 
   return (
     <section id="signup-section" className="py-24 bg-background min-h-screen">

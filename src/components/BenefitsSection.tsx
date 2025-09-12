@@ -1,5 +1,4 @@
-import { Carrot, MessageSquareWarning, ImageOff, Layers, Search, ArchiveX, Globe2, Wrench, Gem, ChevronsUp } from "lucide-react";
-import carPartsImage from "@/assets/car-parts-floating.jpg";
+import { MessageSquareWarning, ImageOff, Search, Globe2, Wrench, Gem, ChevronsUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const BenefitsSection = () => {
