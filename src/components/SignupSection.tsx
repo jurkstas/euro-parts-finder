@@ -10,45 +10,31 @@ export const SignupSection = () => {
       <div className="max-w-4xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Early Access • Limited Rollout 
+            Early Access
           </h2>
           <p className="text-xl max-w-2xl mx-auto mx-auto leading-relaxed">
             Help shape the future of BX Central.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Form */}
-          <Card className="shadow-premium border-0 bg-gradient-subtle">
-            <CardContent className="p-6">
-              <div className="space-y-6">
-
-
-                <div className="w-full flex justify-center">
-                  <iframe
-                    className="w-full aspect-[16/9] min-h-[420px] max-w-md mx-auto rounded-lg border"
-                    src="https://8d73fc69.sibforms.com/serve/MUIFAPD3Epnfl_Pl2zpJT6is0KkUGrp1cg3IOSJBFIJ5dL14AEotMSlL324_TCp3HOLAEHmw6Fz1Hfz00CYoPoZXuixN6BCQ12IsFE6z85lswN4mvIOPA4mp_6-ZBItOJrULgdLJPQ-Vod7Y--kwmzyhhjiHLhvb9QNZal3TiWQnXnlDuOsCS1PydbKMtYkL6NNGIbZHzpaTLDxA"
-                    allowFullScreen
-                    title="Signup Form"
-                  ></iframe>
-                </div>
-
-
-
-                <p className="text-xs text-muted-foreground text-center">
-                  We’ll use your details only for launch updates and early access. Unsubscribe anytime.
-                </p>
-              </div>
-            </CardContent>
-          </Card>
-
+        <div className="grid gap-12 items-center">
           {/* Benefits */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-bold text-foreground mb-6">
-                Join the waitlist today
+              <h3 className="text-2xl font-bold text-foreground mb-6 text-center">
+                Register now to join the early access community
               </h3>
+              
               <div className="space-y-4">
+                <div className="text-center mb-6">
+                                  <a
+                    href="https://forum.bxcentral.eu/?tl=en"
+                    className="inline-flex items-center justify-center px-6 py-3 rounded-lg font-medium bg-primary text-primary-foreground hover:bg-primary/90 transition"
+                  >
+                    BX Central Forum
+                  </a>
+                  </div>
+                  <div className="space-y-4 items-center">
                 <div className="flex items-start gap-4">
                   <div className="w-8 h-8 bg-gradient-hero rounded-full flex items-center justify-center flex-shrink-0">
                     <ChevronsUp className="w-4 h-4 text-white" />
@@ -88,6 +74,7 @@ export const SignupSection = () => {
                     <p className="text-muted-foreground">Join BX Central before others.</p>
                   </div>
                 </div>
+                </div>
               </div>
             </div>
 
@@ -100,7 +87,7 @@ export const SignupSection = () => {
               </div>
               <p className="text-white/90">
                 I’ve run BX groups online and watched good info get buried by noise and scams.
-BX Central is my attempt to fix that - a high-quality, structured community dedicated to the car we love.
+                BX Central is my attempt to fix that - a high-quality, structured community dedicated to the car we love.
               </p>
             </div>
           </div>
